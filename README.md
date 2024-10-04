@@ -52,7 +52,7 @@ Alternatively, you can manually install the necessary packages:
 ```
 pip install transformers langchain sentence-transformers faiss-cpu
 ```
-###Usage
+##Usage
 
 1.Load the GPT-2 Model: The GPT-2 model and tokenizer are loaded from Hugging Face. The model will generate text in response to the user’s question, leveraging the context retrieved from the document database.
 
@@ -77,35 +77,35 @@ print("Response 2:", response2)
 
 This will generate answers using the GPT-2 model based on the context retrieved from the stored documents.
 
-###Memory Integration
+##Memory Integration
 
 The system utilizes LangChain’s ConversationBufferMemory to maintain a conversation across multiple questions. This allows the model to take previous interactions into account and provide coherent responses, enhancing the quality of follow-up answers.
 
-###Customization
+##Customization
 You can easily customize the following aspects of the system:
 
 Documents: Add or modify the documents used for context retrieval.
 Model: Swap the GPT-2 model for another Hugging Face model, like GPT-J or GPT-Neo, depending on your needs.
 Memory: The system uses buffer memory, but you can explore LangChain’s other memory mechanisms (e.g., summarizing memory) for more advanced conversation tracking.
 
-###Project Structure
+##Project Structure
 
 ├── main.py                  # Main script to run the QA system
 ├── requirements.txt         # Required Python packages
 ├── README.md                # Documentation
 └── notebooks/               # Optional Jupyter notebooks for testing and experimentation
 
-###Future Enhancements
+##Future Enhancements
 
 Tool Integration: Adding external tools like web scraping or APIs to provide real-time information and expand the context.
 Fine-tuning GPT-2: Training the model on specific domains to improve its performance in specialized areas.
 Additional Memory Types: Exploring different memory modules, such as summarizing memory or knowledge graphs, to improve context retention.
 
-###License
+##License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-###Acknowledgments
+##Acknowledgments
 
 LangChain: For providing the framework to build language model-powered applications.
 Hugging Face: For the GPT-2 model and tokenizer.
